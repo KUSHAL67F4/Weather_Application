@@ -48,7 +48,7 @@ search.addEventListener('click', () => {
                     break;
 
                 case 'Clouds':
-                    image.src = 'images/cloud.png';
+                    image.src = 'images/clouds.png';
                     break;
 
                 case 'Haze':
@@ -58,9 +58,9 @@ search.addEventListener('click', () => {
                 case 'Mist':
                     image.src = 'images/haze.png';
                     break;
-
+                
                 default:
-                    image.src = 'images/overcast.png';
+                    image.src = '';
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
